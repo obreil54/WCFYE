@@ -56,6 +56,60 @@
   </div>
   <div id="fundraise">
     <h1>Fundraise For Us</h1>
+    <form action="https://formspree.io/f/xeqygkny" method="POST" id="fundraise-form">
+      <label for="first-name" class="red-text"><h4><strong>First name: *</strong></h4></label>
+      <input type="text" id="first-name" name="first-name" required><br>
+      <label for="last-name" class="red-text"><h4><strong>Last name: *</strong></h4></label>
+      <input type="text" id="last-name" name="last-name" required><br>
+      <label for="phone" class="red-text"><h4><strong>Phone number: *</strong></h4></label>
+      <input type="text" id="phone" name="phone" required><br>
+      <label for="email" class="red-text"><h4><strong>Email: *</strong></h4></label>
+      <input type="text" id="email" name="email" required><br>
+      <label for="goal" class="red-text"><h4><strong>How much would you like to raise? *</strong></h4></label>
+      <input type="text" id="goal" name="goal" required><br>
+      <fieldset required>
+        <legend class="red-text"><h4><strong>Select the project(s) you want to raise money for: *</strong></h4></legend>
+        <input type="checkbox" id="project1" name="project" value="Milk">
+        <label for="project1">Milk for Yemen Children</label>
+        <input type="checkbox" id="project2" name="project" value="Food">
+        <label for="project2">Food</label>
+        <input type="checkbox" id="project3" name="project" value="Water">
+        <label for="project3">Water</label>
+        <input type="checkbox" id="project4" name="project" value="Health">
+        <label for="project4">Health</label>
+        <input type="checkbox" id="project5" name="project" value="Education">
+        <label for="project5">Education</label>
+        <input type="checkbox" id="project6" name="project" value="Winter">
+        <label for="project6">Winter</label>
+        <input type="checkbox" id="project7" name="project" value="Ramadan">
+        <label for="project7">Ramadan</label>
+      </fieldset><br>
+      <label for="title" class="red-text"><h4><strong>What will be the title of your campaign? *</strong></h4></label>
+      <input type="text" id="title" name="title" required><br>
+      <label for="story" class="red-text"><h4><strong>Your story: (optional)</strong></h4></label>
+      <textarea id="story" name="story"></textarea><br>
+      <input type="submit" value="Submit" class="button1">
+    </form>
   </div>
+  <div class="red-background">
+    <h1>Thank You To All Our Donors!</h1>
+  </div>
+  <div id="footer">
+    <div id="footer-left">
+      <img src="../images/WCFYE_logo3.png" alt="WCFYE Logo 3">
+      <p class="red-text"><em>White Crescent for Dev. & Human Rights</em></p>
+      <p>WCFYE has been working in the field since 2018, taking all possible measures to protect the lives, rights and saferty of hundreds of thousands of Yemeni people and their children.</p>
+    </div>
+    <div id="footer-right">
+      <h4 class="red-text"><strong>CONNECT WITH US</strong></h4>
+      <p class="red-text"><em>info@wcfye.org</em></p>
+      <div class="socials">
+        <a href=""><i class="fa-brands fa-telegram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://wa.me/+967770695047" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

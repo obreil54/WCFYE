@@ -445,3 +445,53 @@ p {
   border-radius: 25px;
   height: 80vh;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: flex-start;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  height: 2rem;
+  border: 2px solid #C40203;
+  border-radius: 10px;
+}
+
+input, fieldset label, textarea {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-family: "Newsreader", serif;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+  margin-left: 16px;
+  margin-right: 4px;
+}
+
+#project1 {
+  margin-left: 8px;
+}
+
+#story {
+  height: 10rem;
+
+}
+
+input[type="submit"] {
+  margin-left: auto;
+}
+
+textarea {
+  padding: 4px;
+}
