@@ -28,8 +28,27 @@
       <a href="/get_involved/"><h4>Get Involved</h4></a>
       <a href="/get_involved/"><h4 class="button1">Donate Now</h4></a>
     </div>
+    <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
   </div>
+
+  <div id="mobile-navbar">
+    <div id="mobile-navbar-links">
+      <a href="/yemen_crisis/"><h4>Yemen Crisis</h4></a>
+      <div id="projects-dropdown">
+        <a href="/projects/"><h4 class="center-icon">Projects <i class="fa-solid fa-chevron-down"></i></h4></a>
+        <div id="dropdown-content">
+          <a href="/projects/food.html"><h4>Food</h4></a>
+          <a href="/projects/livelihood.html"><h4>Livelihood</h4></a>
+          <a href="/projects/education.html"><h4>Education</h4></a>
+          <a href="/projects/health.html"><h4>Health</h4></a>
+        </div>
+      </div>
+      <a href="/about/"><h4>About</h4></a>
+      <a href="/get_involved/"><h4>Get Involved</h4></a>
+      <a href="/get_involved/"><h4 class="button1">Donate Now</h4></a>
+    </div>
   </div>
+
   <div id="home-banner">
     <div id="banner-right">
       <img src="images/WCFYE_logo3.png" alt="WCFYE Logo 3">
@@ -109,5 +128,18 @@
       </div>
     </div>
   </div>
+  <script>
+    button = document.getElementById("menu-toggle")
+    button.addEventListener("click", function() {
+      navbar = document.getElementById("mobile-navbar");
+      if (navbar.style.display === "flex") {
+        navbar.style.display = "none";
+        button.style.color = "black";
+      } else {
+        navbar.style.display = "flex";
+        button.style.color = "#C40203";
+      }
+    });
+  </script>
 </body>
 </html>
