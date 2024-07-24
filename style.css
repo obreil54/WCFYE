@@ -509,3 +509,139 @@ input[type="submit"] {
 textarea {
   padding: 4px;
 }
+
+
+#menu-toggle {
+  display: none;
+}
+
+#mobile-navbar {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  background-color: white;
+  width: 50%;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+#mobile-navbar a {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 2em;
+    color: black;
+  }
+
+  #navbar-links {
+    display: none;
+  }
+
+  #navbar {
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+  }
+
+  #home-banner {
+    height: 50vh;
+    padding: 16px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #banner-right {
+    width: 100%;
+  }
+
+  #banner-right h2 {
+    font-size: 24px;
+  }
+
+  .red-background {
+    padding: 32px 16px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  #values {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value {
+    width: 80%;
+    margin: 16px 0;
+  }
+
+  .projects {
+    padding: 32px 16px;
+    width: 100%;
+  }
+
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+    margin: 16px 0;
+  }
+
+  #home-crisis-banner {
+    height: 50vh;
+    padding: 16px;
+    width: 100%;
+  }
+
+  #home-crisis-banner h1 {
+    font-size: 36px;
+  }
+
+  #home-crisis-banner h3 {
+    font-size: 24px;
+    width: 80%;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-to-action a {
+    margin: 8px 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+  }
+
+  #footer-left {
+    width: 80%;
+    margin-bottom: 16px;
+  }
+
+  #footer-right {
+    width: 80%;
+  }
+}
